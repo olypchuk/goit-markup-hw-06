@@ -150,25 +150,25 @@
         </section>
         
 <div class="modal-container is-hidden" data-modal>
-        <div class="modal"><p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-            <form><div class="form">
-            <label for="label-name" name="Имя" novalidate>Имя</label>
-                    <input type="text" id="label-name" required/>
-            <label for="label-tel" name="tel">Телефон</label>
-                    <input type="tel"  id="label-tel"required/>     
-            <label for="label-email" name="email">Почта</label>
-                    <input type="email" name="email" id="label-email" required/>
+        <div class="modal">
+            <form><div class="modal-form"><p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <label for="label-name" name="Имя" novalidate class="label-name">Имя</label>
+                    <input type="text" id="label-name" class="modal-label" required/>
+            <label for="label-tel" name="tel" class="label-name">Телефон</label>
+                    <input type="tel"  id="label-tel" class="modal-label" required/>     
+            <label for="label-email" name="email"  class="label-name">Почта</label>
+                    <input type="email" name="email" id="label-email" class="modal-label" required/>
             <label>Комментарий
-                    <textarea name="textarea" placeholder="Введите текст"></textarea></label>
-                    <label><input type="checkbox" required></label><p class="modal-text">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></p>
-                    <button type="submit" class="btn send">Отправить</button>
+                    <textarea name="textarea" placeholder="Введите текст" class="label-name textarea "></textarea></label>
+                    <div class="checkbox"><label><input type="checkbox" required><p class="modal-text">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></p></label></div>
+                    <div class="wrap-btn"><button type="submit" class="btn send">Отправить</button></div>
 
 
 
   <div class="close-svg"><button class="modal-close-button" data-modal-close><svg class="cross"><use href="./images/symbol-defs.svg#icon-cross"></use></svg></button></div>
                    </div></form></div></div>
 
-   
+
     </main>
     <footer class="footer">
         <div class="footer container">
@@ -194,7 +194,9 @@
             
                 <label for="footer-label" class="footer-label">Подпишитесь на рассылку</label><div class="div-footer">
                 <input type="email" placeholder="E-mail" id="footer-label" class="footer-input" required/>
-                <button type="submit" class="btn submit">Подписаться</button></div>
+                <button type="submit" class="btn submit">Подписаться<svg widht="24" height="24" class="submit-icon">
+                    <use href="/images/symbol-defs.svg#icon-icon-send-1"></use>
+                </svg></button></div>
         </form>
     </div>
         </div>

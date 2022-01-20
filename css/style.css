@@ -222,7 +222,7 @@ img {
     text-align: center;
 
     margin-top: 40px;
-    margin-bottom: 200px;
+
     padding: 10px 32px;
     color: var(--backgroundcolor);
     background: #2196f3;
@@ -576,13 +576,14 @@ img {
     justify-content: center;
     margin-top: 4px;
 }
-/* form footer */
+/*__________________ form footer________________--------- */
 .form-footer {
     margin-left: 93px;
     padding-top: 12px;
 }
 .div-footer {
-    flex-direction: column;
+    display: flex;
+    align-items: baseline;
 }
 .footer-label {
     font-weight: bold;
@@ -604,10 +605,19 @@ img {
     width: 358px;
 }
 
-.btn.submit {
-    margin: 0 0 0 12px;
+.submit-icon {
+    width: 24px;
+    margin-left: 10px;
 }
-/* modal */
+.btn.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 12px;
+    padding: 10px 28px 10px 29px;
+}
+
+/* --------------modal-------------- */
 
 .modal-container {
     position: fixed;
@@ -643,6 +653,7 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px;
 }
 .close-svg {
     display: flex;
@@ -680,26 +691,42 @@ img {
     letter-spacing: 0.03em;
 
     color: #212121;
-    padding: 40px 40px 0 40px;
 }
-.form {
-    padding: 12px 40px 40px 40px;
-}
-.form > label {
+.label-name {
     display: block;
-    width: 100%;
-    margin-bottom: 28px;
-    outline: none;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-top: 12px;
+    margin-bottom: 4px;
 }
+
 input > label {
     padding-top: 4px;
 }
-textarea {
+.modal-label {
+    padding: 12px 0;
+    width: 100%;
+
+    border: 1px solid #2196f3;
+
+    border-radius: 4px;
+}
+.textarea {
+    width: 100%;
+    height: 120px;
     resize: none;
 }
+.modal-text > span {
+    text-decoration: underline;
+    color: var(--accentcolor);
+    cursor: pointer;
+}
+.checkbox {
+}
+.wrap-btn {
+    display: flex;
+    padding-top: 30px;
+}
 .send {
-    margin: 0;
+    margin: auto;
     align-items: center;
+    justify-content: center;
 }
