@@ -152,24 +152,22 @@
 <div class="modal-container is-hidden" data-modal>
         <div class="modal">
             <form><div class="modal-form"><p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-            <label for="label-name" name="Имя" novalidate class="label-name">Имя</label>
-                    <div class="input-all"><input type="text" id="label-name" class="modal-label" required/><svg class="input-icon"><use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use></svg></div>
-            <label for="label-tel" name="tel" class="label-name">Телефон</label>
-                    <div class="input-all"><input type="tel"  id="label-tel" class="modal-label" required/><svg class="input-icon">
+            <label for="label-name"  novalidate class="label-name">Имя</label>
+                    <div class="input-all"><input type="text" name="name" id="label-name" class="modal-label" required/><svg class="input-icon"><use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use></svg></div>
+            <label for="label-tel"  class="label-name">Телефон</label>
+                    <div class="input-all"><input type="tel" name="tel"  id="label-tel" class="modal-label" required/><svg class="input-icon">
                         <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1"></use>
                     </svg></div>
-            <label for="label-email" name="email"  class="label-name">Почта</label>
+            <label for="label-email" class="label-name">Почта</label>
                     <div class="input-all"><input type="email" name="email" id="label-email" class="modal-label" required/><svg class="input-icon">
                         <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
                     </svg></div>
             <label class="label-name">Комментарий
-                    <textarea name="textarea" placeholder="Введите текст" class="label-name textarea "></textarea></label>
+                    <textarea name="textarea" placeholder="Введите текст" class="label-name textarea"></textarea></label>
 
-                   <div class="checkbox"><label class="checkbox-label"><input type="checkbox" id="checkbox" class="checkbox-input visually-hidden"required><svg class="agreement-icon"><use href="./images/symbol-defs.svg#icon-check"></use></svg><p class="modal-text">Соглашаюсь с рассылкой и принимаю <a href="#" class="agreement">Условия договора</a></p></label></div>
+                   <div class="checkbox"><label class="checkbox-label"><input type="checkbox" name="checkbox" id="checkbox" class="checkbox-input visually-hidden"required><svg class="agreement-icon"><use href="./images/symbol-defs.svg#icon-check"></use></svg><p class="modal-text">Соглашаюсь с рассылкой и принимаю <a href="#" class="agreement">Условия договора</a></p></label></div>
                     
                     <div class="wrap-btn"><button type="submit" class="btn send">Отправить</button></div>
-
-
 
   <div class="close-svg"><button class="modal-close-button" data-modal-close><svg class="cross"><use href="./images/symbol-defs.svg#icon-cross"></use></svg></button></div>
                    </div></form></div></div>
@@ -200,7 +198,7 @@
             <form action="#" class="form-footer">
             
                 <label for="footer-label" class="footer-label">Подпишитесь на рассылку</label><div class="div-footer">
-                <input type="email" placeholder="E-mail" id="footer-label" class="footer-input" required/>
+                <input type="email" name="footer-email" placeholder="E-mail" id="footer-label" class="footer-input" required/>
                 <button type="submit" class="btn submit">Подписаться<svg widht="24" height="24" class="submit-icon">
                     <use href="./images/symbol-defs.svg#icon-icon-send-1"></use>
                 </svg></button></div>
