@@ -721,6 +721,7 @@ input > label {
     width: 18px;
     height: 18px;
     cursor: pointer;
+    pointer-events: none;
 }
 .textarea {
     width: 100%;
